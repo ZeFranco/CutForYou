@@ -17,6 +17,7 @@
   z-index: 1000;
   border-bottom: 2px solid var(--barber-blue);
   box-sizing: border-box;
+  
 }
 
 .nav-container {
@@ -73,4 +74,25 @@
     var(--barber-blue) 40px,
     var(--barber-blue) 60px
   );
+}
+
+.shops-container {
+  max-width: auto;
+  margin: 120px auto 40px auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  
+}
+.shop-card {
+  background: var(--bg-dark);
+  border: 2px solid var(--barber-blue);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color : var(--barber-white);
+  align-items: center;
+  padding-left: 20px;
 }
